@@ -148,14 +148,127 @@ button {
     position: absolute;
 }
 
-.button {
-    background-color: #04AA6D;
+.play {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: var(--background);
+}
+
+button {
+    background-color: #0284d4;
+    padding: 8px 15px;
     border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.4s all;
+}
+
+button:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: .6vw;
+    padding-bottom: 5vw;
+
+}
+ 
+#games img {    
+    height: 15.6vw;
+    width: 15.6vw;
+    border-radius: 1vw;
+    margin: .5vw;
+    cursor: pointer;
+    user-select: none;
+    transition: transform .2s;
+}
+ 
+#games img:hover {
+    transform: scale(1.01);
+}
+
+.content {
+    flex-direction: column;
+    align-items: left;
+    padding: 7vw;
+    padding-top: 0vw;
+}
+
+.content hr {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    margin: 1vw 0;
+}
+
+.search {
+    display: flex;
+    user-select: none;
+    margin-top: 2.5vw;
+    margin-left: 1.2vw;
+}
+ 
+.search input {
+    background-color: #222222;
+    border: none;
+    border-radius: 1vw 0 0 1vw;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.8vw 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    outline: none;
+}
+ 
+.search input::placeholder {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+ 
+.search button {
+    background-color: gray;
+    border: none;
+    border-radius: 0 1vw 1vw 0;
+    color:#222222;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.8vw 1vw;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    transition: .3s all ease;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 50%; 
+    justify-content: space-between;
+    margin-top: .5vw;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 50%; 
+    justify-content: space-between;
+    margin-top: .5vw;
+}
+
+h2 {
     color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-}  
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
