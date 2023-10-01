@@ -76,3 +76,86 @@ nav ul li a {
 p.seo {
     display:none;
 }
+
+.center {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 7vw;
+    width: 100%;
+    display: inline;
+}
+
+.gamegroup {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+}
+
+.play {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: var(--background);
+}
+
+button {
+    color: var(--background);
+    background-color: var(--accent);
+    padding: 8px 15px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.4s all;
+}
+
+.center-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.links {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.center-container h1 {
+    top: 51%;
+    width: 100%;
+    position: absolute;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}  
